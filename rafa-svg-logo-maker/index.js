@@ -1,12 +1,18 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const SvgLogo = require('./logo'); 
+const SvgLogo = require('./logo.js'); 
 
 inquirer
   .prompt([{
     type: 'input',
     name: 'text',
-    message: 'Enter a logo text containing up to 3 characters:'
+    message: 'Enter a logo text containing up to 3 characters:',
+    validate: function (input) {
+        if (input.length > 3) {
+            return 'Logo text should only contain up to 3 characters';
+        }
+        return true;
+    }
   },
 
   {
@@ -32,8 +38,7 @@ inquirer
   .then((response) => {
     const logoMaker = SvgLogo.shape(response);
 
-    fs.writeFile(`${response.text}.svg`, logoMaker, (err) =>
-      err ? console.log(err) : console.log('Successfully created logo.svg!')
+    fs.writeFile(`./assets/${response.text}.svg`, logoMaker, (err) =>
+      err ? console.log(err) : console.log(`Successfully created ${response.text}.svg!`)
     );
   });
-  
