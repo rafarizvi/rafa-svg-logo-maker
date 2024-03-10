@@ -13,12 +13,12 @@ N/A
 
 ## Usage
 
-Users are able answer the prompts presented for each parameter of the logos design. Then a logo svg file is generated.
+Users are able answer the prompts presented for each parameter of the logo's design. Then a logo svg file is generated.
 
-## [Link to Video](https://drive.google.com/file/d/1-r_nAja_ABsTCj5hQo0GVrXzB7YK3zjY/view)
+## [Link to Video](https://drive.google.com/file/d/1HsQuvZ2BbIaTW0DwjdXmOA_j3Oobvawb/view)
 
-![screenshot of readme generator](images/1.png)
-![screenshot of readme generator](images/2.png)
+![screenshot of svg logo maker](assets/images/1.png)
+![screenshot of svg logo maker](assets/images/2.png)
 ## Credits
 
 N/A
