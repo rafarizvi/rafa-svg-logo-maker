@@ -38,7 +38,7 @@ inquirer
   .then((response) => {
     const logoMaker = SvgLogo.shape(response);
 
-    fs.writeFile(`./assets/${response.text}.svg`, logoMaker, (err) =>
-      err ? console.log(err) : console.log(`Successfully created ${response.text}.svg!`)
+    fs.writeFile(`./assets/${response.text}-logo.svg`, logoMaker, (err) =>
+      err ? console.log(err) : console.log(`Successfully created ${response.text}-logo.svg!`)
     );
   });
